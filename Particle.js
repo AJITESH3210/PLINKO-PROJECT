@@ -23,7 +23,12 @@ class Particle{
         ellipseMode(RADIUS);
         ellipse(0, 0, this.r, this.r);
         pop();
-
+        for(var j = 40; j <= width; j = j+50){
+            plinkos.push(new Plinko(j,75));
+          }
+          for(var j = 15; j <= width; j = j+50){
+            plinkos.push(new Plinko(j,175));
+          }
     }
 }
 

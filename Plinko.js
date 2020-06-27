@@ -22,7 +22,7 @@ class Plinko {
         translate(pos.x, pos.y);
         rotate(angle);
         circle(0, 0, this.width, this.height);
+        
         pop();
       }
     }
-    
