@@ -16,10 +16,12 @@ function setup() {
   world = engine.world;
 
   ground = new Ground(240,690,800,20);
-  divisions = new Divisions(05,650,20,200)
 
 
 
+  for(var k = 0; k <= width; k = k + 80){
+    divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
+  }
 
  // Engine.run(engine);
  World.add(world,ground);
@@ -30,7 +32,8 @@ function draw() {
   Engine.update(engine);
     
   
- // plinkos.display();
-  divisions.display();
+  for(var i=0; i < divisions.length; i++) {
+     divisions(i).display(); 
+  }
   ground.display();
 }
