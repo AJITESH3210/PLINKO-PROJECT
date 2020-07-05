@@ -54,19 +54,6 @@ function draw() {
      divisions[i].display(); 
   }
 
-  for(var i=0; i < plinkos.length; i++) {
-      plinkos[i].display(); 
-  }
-  for(var i=0; i < plinkos.length; i++) {
-    plinkos[i].display(); 
-  }
-  for(var i=0; i < plinkos.length; i++) {
-    plinkos[i].display(); 
-  }
-
-  for(var i=0; i < plinkos.length; i++) {
-    plinkos[i].display(); 
-  }
   for (var j = 0; j < plinkos.length; j++){
     plinkos[j].display();
   }
